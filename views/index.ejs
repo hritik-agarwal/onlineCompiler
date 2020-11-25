@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onlineCompiler</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="codemirror-5.58.3/lib/codemirror.css">
+  <link rel="stylesheet" href="twilight.css">
+</head>
+
+<body>
+  <header>
+    <div id="mainHeader">
+      Online C++ Compiler
+    </div>
+  </header>
+  <section class="container">
+    <form action="/" method="post">
+      <div>
+        <label for="codeArea">Code</label><br>
+        <textarea class="codemirror-textarea" name="codeArea" id="codeArea" rows="20"></textarea>
+      </div>
+      <div>
+        <label for="inputArea">Input</label><br>
+        <textarea name="inputArea" id="inputArea"></textarea>
+      </div>
+      <button type="submit">Run</button>
+    </form>
+  </section>
+  <footer>
+
+  </footer>
+  <script src="jquery.min.js"></script>
+  <script src="codemirror-5.58.3/lib/codemirror.js"></script>
+  <script src="script.js"></script>
+  <script src="clike.js"></script>
+  <script src="closebrackets.js"></script>
+</body>
+
+</html>
